@@ -3,8 +3,9 @@
             --bg: #0b0b0f;
             --card: #15161d;
             --txt: #f5f6fa;
+            --lnk: #1f74e2;
             --muted: #b5b7c0;
-            --accent: #e50914
+            --accent: #e50914;
         }
 
         /* Global box sizing */
@@ -14,3 +15,268 @@
 
        /* Bæta við CSS fyrir neðan */
        /* ------------------------ */
+
+header {
+    background-color: #0b0b0f;
+    background: linear-gradient(to top right, #0b0b0f 85%, #15161d);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--txt);
+    padding: 0px;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 5;
+}
+.swiper-slide {
+    position: relative;
+     background-color: var(--card);
+     display: flex;
+     justify-content: center;
+     height: 800px;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 10%;       /* or 'top: 0' if you want it at the top */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* dark transparent overlay for readability */
+  padding: 10px;
+}
+.text-overlay a{
+    color: white
+}
+.text-overlay a:hover{
+    color: var(--lnk);
+}
+#movieImage {
+    max-height: 400px;
+}
+
+.imageSwiper {
+    
+   object-fit: contain;
+}
+#playButton {
+    background-color: #1f74e2;
+    color: white;
+
+}
+#playButton a {
+    color: white;
+}
+
+.swiper-wrapper {     
+   
+    
+}
+
+body {
+    color: var(--txt);
+    background-color: var(--bg)    
+}
+
+a {
+    color: var(--lnk);
+    text-decoration: none;
+    
+}
+
+header :hover {
+    color: var(--txt);
+    text-shadow: 2px 2px 3px #8a8ab4;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img {
+    border-radius: 30px;
+}
+
+.logo img:hover {
+    box-shadow: 0px 0px 2px #4d4d6d;
+}
+
+#headerlogo {
+    color: var(--lnk);
+    font-family: "Changa One", sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    
+}
+#headerlogo:hover {
+    text-shadow: 0px 0px 5px #4d4d6d;
+}
+
+#headerlinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    text-shadow: 2px 3px 3px #000000;
+}
+
+a#headerlinks :hover {
+    text-shadow: 0px 2px 3px #8a8ab4;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+#headerlinks :active {
+    color: var(--accent);
+}
+
+#movies-container{
+    /* display: grid;
+     /* height: 200px;
+     width: 10px; */
+  /* grid-template-columns: repeat(3, 1fr); /* 2 images per row */
+  /*gap: 10px; /* space between images */
+  /*max-width: 600px;
+  /*margin: 0 auto; */ 
+     /* grid-column: 1/3;
+  grid-row: 1/2; */
+  /* grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: aqua;
+  padding: 10px;
+     */
+    }
+
+
+
+
+.movieDiv{
+  
+    height: 500px;
+    width: 500px;
+       /* grid-column: 1/3;
+  grid-row: 1/2; */
+     /* grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: aqua;
+  padding: 10px; */
+    
+    
+}
+
+.movies{
+    display: flex;
+    flex-direction: column;
+}
+
+.movieDiv img {
+ height: 400px; 
+    width: 300px; 
+
+}
+
+#action{
+    display: flex;
+    height: 600px;
+    width: 100vw;
+    align-items: center;
+    margin-top: auto;
+    gap: 16px;
+    overflow-x: scroll;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+
+}
+
+#horror{
+    display: flex;
+    height: 600px;
+    width: 100vW;
+    align-items: center;
+    margin-top: auto;
+    gap: 16px;
+    overflow-x: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+#comedy{
+    display: flex;
+    height: 600px;
+    width: 100vW;
+    align-items: center;
+    margin-top: auto;
+    gap: 16px;
+    overflow-x: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#scifi{
+
+    display: flex;
+    height: 600px;
+    width: 100vW;
+    align-items: center;
+    margin-top: auto;
+    gap: 16px;
+    overflow-x: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#drama{
+
+    display: flex;
+    height: 600px;
+    width: 100vW;
+    align-items: center;
+    margin-top: auto;
+    gap: 16px;
+    overflow-x: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.categoriesContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+align-items: center;
+    ;
+    font-family: "Fjalla One", sans-serif;
+  
+}
+
+
+footer {
+    background-color: #0b0b0f;
+    background: linear-gradient(15deg, #15161d 0.5%, #0b0b0f, #0b0b0f, #0b0b0f 85%, #15161d);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.foottexti {
+    display: flex;
+    justify-content: center;
+}
+
+p.footlink {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+p.footlink :hover {
+    color: var(--muted);
+    text-shadow: 0px 0px 5px #8a8ab4;
+}

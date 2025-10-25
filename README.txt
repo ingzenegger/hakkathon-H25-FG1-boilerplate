@@ -1,3 +1,6 @@
+ Team BubblesBox
+Inga, Svava, Inga
+ 
  ** SLIDER **
 ---------------------------
 

@@ -1,5 +1,8 @@
 // Hér eru allar myndirnar með upplýsingum um þær
 
+
+
+
 const MOVIES = [
   {
     id: 'ant_man',
@@ -446,7 +449,7 @@ export const SLIDER_MOVIES = [
     release_date: '',
     image: 'images/background/background_4.jpg',
     description:
-      'Fullmetal Alchemist: The Final Alchemy is a 2024 American action film directed by Jón and Kinga and starring Antonio Banderas, Salma Hayek, and Antonio Banderas.',
+      'Fullmetal Alchemist: The Final Alchemy is a 2024 American action film directed by Jon and Kinga and starring Antonio Banderas, Salma Hayek, and Antonio Banderas.',
   },
   {
     id: 'background_5',
@@ -454,7 +457,7 @@ export const SLIDER_MOVIES = [
     release_date: '',
     image: 'images/background/background_5.jpg',
     description:
-      'The Tribal Warfare is a 2024 American action film directed by Jón and Kinga and starring Antonio Banderas, Salma Hayek, and Antonio Banderas.',
+      'The Tribal Warfare is a 2024 American action film directed by Jon and Kinga and starring Antonio Banderas, Salma Hayek, and Antonio Banderas.',
   },
 ];
 
