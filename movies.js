@@ -1,3 +1,5 @@
+// Hér eru allar myndirnar með upplýsingum um þær
+
 const MOVIES = [
   {
     id: 'ant_man',
